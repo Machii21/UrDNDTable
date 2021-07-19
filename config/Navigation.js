@@ -7,12 +7,10 @@ import Player from "../screens/Player";
 
 export default function Navigation() {
     const Stack = createStackNavigator();
-    const HomeStack = () => {
-        return (
-            <Stack.Navigator>
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Player" componet={Player} />
-            </Stack.Navigator>
-        )
-    }
+    return (
+        <Stack.Navigator>
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="Player" componet={Player} />
+        </Stack.Navigator>
+    )
 }
